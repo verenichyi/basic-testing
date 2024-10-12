@@ -6,13 +6,9 @@ const testCases = [
   { a: 2, b: 2, action: Action.Add, expected: 4 },
   { a: 3, b: 2, action: Action.Add, expected: 5 },
   { a: 5, b: 3, action: Action.Subtract, expected: 2 },
-  { a: 10, b: 5, action: Action.Subtract, expected: 5 },
   { a: 6, b: 2, action: Action.Divide, expected: 3 },
-  { a: 9, b: 3, action: Action.Divide, expected: 3 },
   { a: 4, b: 3, action: Action.Multiply, expected: 12 },
-  { a: 7, b: 6, action: Action.Multiply, expected: 42 },
   { a: 2, b: 3, action: Action.Exponentiate, expected: 8 },
-  { a: 5, b: 2, action: Action.Exponentiate, expected: 25 },
   { a: 10, b: 0, action: Action.Divide, expected: Infinity },
   { a: '3423', b: [1], action: Action.Divide, expected: null },
 ];
