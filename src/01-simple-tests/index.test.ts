@@ -15,7 +15,7 @@ describe('simpleCalculator tests', () => {
   });
 
   test('should divide two numbers', () => {
-    expect(simpleCalculator({ a: 9, b: 3, action: Action.Subtract })).toBe(3);
+    expect(simpleCalculator({ a: 9, b: 3, action: Action.Divide })).toBe(3);
   });
 
   test('should exponentiate two numbers', () => {
@@ -25,12 +25,12 @@ describe('simpleCalculator tests', () => {
   });
 
   test('should return null for invalid action', () => {
-    expect(simpleCalculator({ a: 1, b: 1, action: 'Invalid action' })).toBe(
-      null,
-    );
+    expect(
+      simpleCalculator({ a: 1, b: 1, action: 'Invalid action' }),
+    ).toBeNull();
   });
 
   test('should return null for invalid arguments', () => {
-    expect(simpleCalculator({ a: '1', b: '1', action: Action.Add })).toBe(null);
+    expect(simpleCalculator({ a: '1', b: '1', action: Action.Add })).toBeNull();
   });
 });
